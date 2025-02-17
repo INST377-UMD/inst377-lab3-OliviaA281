@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header-footer {
+            text-align: center;
+        }
+        .header-footer h1 {
+            color: hotpink;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .main-content {
+            width: 70%;
+            padding: 10px;
+            margin: 10px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: rgba(173, 216, 230, 0.5);
+            padding: 10px;
+            border-left: 2px solid black;
+            margin-left: auto;
+            transition: background-color 0.3s;
+        }
+        .sidebar:hover {
+            background-color: lightblue;
+        }
+        input[type="text"] {
+            transition: width 0.3s;
+        }
+        input[type="text"]:focus {
+            width: 200px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-footer">
+        <h1>Rock Paper Scissors!</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="https://www.girlsgogames.com">GirlsGoGames</a></li>
+            <li><a href="https://www.coolmathgames.com">CoolMath</a></li>
+            <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main class="main-content">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="choice">Choose:</label>
+                <select id="choice" name="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <button type="submit">Play</button>
+            </form>
+        </main>
+        <aside class="sidebar">
+            <h2>How to Play</h2>
+            <p>Rock crushes Scissors</p>
+            <p>Scissors cuts Paper</p>
+            <p>Paper covers Rock</p>
+        </aside>
+    </div>
+    
+    <footer class="header-footer">
+        <p>&copy; Thank you for playing!</p>
+    </footer>
+</body>
+</html>
+
+
+
